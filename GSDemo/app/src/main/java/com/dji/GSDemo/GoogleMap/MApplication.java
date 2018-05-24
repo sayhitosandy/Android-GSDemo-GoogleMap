@@ -2,6 +2,7 @@ package com.dji.GSDemo.GoogleMap;
 
 import android.app.Application;
 import android.content.Context;
+//import android.util.Log;
 
 import com.secneo.sdk.Helper;
 
@@ -11,6 +12,7 @@ public class MApplication extends Application {
     @Override
     protected void attachBaseContext(Context paramContext) {
         super.attachBaseContext(paramContext);
+//        Log.d("MApplication", "secneo");
         Helper.install(MApplication.this);
         if (fpvDemoApplication == null) {
             fpvDemoApplication = new DJIDemoApplication();
